@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap&subset=cyrillic');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  box-sizing: border-box;
+}
+
+.text-color {
+  color: #fff;
+}
+
+body, html {
+  overflow-x: hidden;
+}
+
+nav {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%
+}
+
+#checkbox-menu,
+.toggle {
+  display: none;
+}
+
+.menu {
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  list-style-type: none;
+}
+
+.menu li a {
+  color: #000;
+  text-decoration: none;
+  align-self: center;
+  font-size: 15px;
+  padding: 10px 15px;
+  transition: background 0.2s linear, padding .2s linear;
+}
+
+.menu li a:hover {
+  background: #ffcc01;
+  border-radius: 3px;
+}
+
+.menu li a.logo {
+  font-size: 25px;
+  margin-right: 240px;
+  transition: margin .2s linear;
+}
+
+.menu li a.contacts {
+  margin-right: 100px;
+  transition: margin .2s linear;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.intro {
+  margin-top: 25px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.intro-img {
+  background-image: url(./img/luke-van-zyl-koH7IVuwRLw-unsplash.jpg);
+  width: 965px;
+  height: 640px;
+  position: relative;
+  right: 60px;
+}
+
+.intro .intro-text {
+  position: relative;
+  font-size: 62px;
+  top: 50px;
+  right: 20px;
+}
+
+.intro-contacts {
+  background-color: #ffcc01;
+  max-width: 765px;
+  position: absolute;
+  top: 638px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 50px;
+}
+
+.intro-contacts i {
+  color: #fff;
+  margin-right: 30px;
+}
+
+.intro-contacts p {
+  font-size: 18px;
+  margin-right: 60px;
+}
+
+@media screen and (max-width: 1100px) {
+  .menu li a {
+    padding: 10px 10px;
+  }
+  
+  .menu li a.logo {
+    font-size: 25px;
+    margin-right: 50px;
+  }
+  
+  .menu li a.contacts {
+    margin-right: 25px;
+  }
+
+  .intro {
+    margin-top: 0;
+    display: block;
+    max-width: 100%
+  }
+  
+  .intro .intro-text {
+    position: relative;
+    font-size: 52px;
+    right: -30px;
+    top: 25px;
+  }
+
+  .intro-img {
+    position: relative;
+    margin: auto;
+    right: 0;
+  }
+
+  .intro .intro-contacts {
+    right: 0;
+    /* top: -56px; */
+    /* padding: 20px 10px; */
+    position: absolute;
+  }
+
+  .intro-contacts i {
+    margin-right: 10px;
+  }
+
+  .intro-contacts p {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .toggle {
+    clear: both;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    width: 100%;
+    color: #000;
+    background: #ffcc01;
+    transition: all .1s linear;
+  }
+  
+  .toggle:hover {
+    background: #d3a900;
+  }
+
+  #checkbox-menu:checked + label .touch li {
+    opacity: 1;
+    visibility: visible;
+    transition: all .7s linear;
+  }
+
+  #checkbox-menu:checked + label .touch {
+    height: 350px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 0;
+    transition: height .3s linear;
+  }
+
+  .menu li {
+    display: flex;
+    align-self: center;
+    width: 95%;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  .menu li a {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    align-content: center;
+  }
+
+  .menu li a.logo {
+    font-size: 21px;
+    margin-right: 0px;
+  }
+  
+  .menu li a.contacts {
+    margin-right: 0px;
+  }
+
+  .intro {
+    margin-top: 0;
+    display: block;
+    max-width: 100%
+  }
+
+  .intro-img {
+    background-position: bottom 10px right 0px;
+  }
+  
+  .intro .intro-text {
+    position: relative;
+    font-size: 35px;
+    right: -30px;
+    top: 25px;
+  }
+
+  .intro .intro-contacts {
+    right: 0;
+    top: -56px;
+    padding: 20px 10px;
+    position: relative;
+  }
+
+  .intro-contacts i {
+    margin-right: 10px;
+  }
+
+  .intro-contacts p {
+    font-size: 14px;
+    margin-right: 0;
+  }
+}
