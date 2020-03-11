@@ -157,6 +157,109 @@ nav {
   font-size: 20px;
 }
 
+.apartments {
+  background: #f6f5f4;
+  padding: 60px 10px;
+}
+
+.apart h2 {
+  margin-bottom: 85px;
+  font-size: 40px;
+}
+
+.card {
+  max-width: 348px;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.3);
+  transition: box-shadow .2s linear;
+  margin: auto;
+}
+
+.card-container {
+  padding: 25px;
+}
+
+.card-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.card-info .money {
+  font-size: 18px;
+  color: #ffcc01;
+}
+
+.card-info i {
+  margin-right: 8px;
+}
+
+.card-info span:first-child {
+  margin-right: 18px;
+}
+
+.card:hover {
+  background: #fafaf9;
+  box-shadow: 0 0 10px rgba(0,0,0, 0.8);
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-row-gap: 30px;
+}
+
+.apart input[type=text] {
+  margin-top: 50px;
+  width: 300px;
+  height: 70px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #919eb1;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  padding-left: 62px;
+  background-image: url(img/house.png);
+  background-repeat: no-repeat;
+  background-position: 27px;
+}
+
+.apart input[type=submit] {
+  width: 115px;
+  border: none;
+  height: 70px;
+  background: #ffcc01;
+  font-size: 15px;
+  margin-left: -4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  outline: none;
+}
+
+.all {
+  width: 250px;
+  height: 70px;
+  border: none;
+  border-radius: 4px;
+  margin-left: 40px;
+  margin-top: 52px;
+  font-size: 15px;
+  background: #fff;
+  outline: none;
+  transition: box-shadow .2s linear;
+}
+
+.all:hover {
+  box-shadow: 0 0 5px rgba(0,0,0, 0.2);
+}
+
+.button-search {
+  display: flex;
+  justify-content: space-between;
+}
+
 @media screen and (max-width: 1100px) {
   .menu li a {
     padding: 10px 10px;
@@ -233,6 +336,28 @@ nav {
     height: 140px;
     width: 140px;
     margin: 15px;
+  }
+
+  .apartments {
+    padding: 20px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+  }
+  
+  .button-search {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .all {
+    margin-top: 10px;
+    width: 348px;
+    margin-left: 0;
   }
 }
 
@@ -331,6 +456,7 @@ nav {
 
   .stats {
     margin-top: 0px;
+    margin-bottom: 30px;
     flex-direction: column;
   }
 
@@ -359,5 +485,42 @@ nav {
     height: 140px;
     width: 140px;
     margin: 15px;
+  }
+
+  .apartments {
+    padding: 10px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 10px;
+    justify-items: center;
+  }
+
+  .apart h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+  }
+
+  .apart input[type=text] {
+    margin-top: 20px;
+    width: 248px;
+  }
+
+  .apart input[type=submit] {
+    width: 100px;
+  }
+
+  .button-search {
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .all {
+    margin-top: 10px;
+    width: 348px;
+    margin-left: 0;
   }
 }
