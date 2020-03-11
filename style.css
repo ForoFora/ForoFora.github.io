@@ -237,6 +237,7 @@ nav {
   border-bottom-right-radius: 4px;
   outline: none;
   -webkit-appearance: none;
+  appearance: none !important;
 }
 
 .all {
