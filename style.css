@@ -237,7 +237,6 @@ nav {
   border-bottom-right-radius: 4px;
   outline: none;
   -webkit-appearance: none;
-  appearance: none !important;
 }
 
 .all {
@@ -260,6 +259,80 @@ nav {
 .button-search {
   display: flex;
   justify-content: space-between;
+}
+
+.steps {
+  padding: 0px 10px;
+}
+
+.steps h2 {
+  margin-top: 55px;
+  font-size: 40px;
+  margin-bottom: 35px;
+}
+
+.steps-text {
+  line-height: 27px;
+  font-size: 16px;
+}
+
+.mbtext {
+  margin-bottom: 70px;
+}
+
+.stepblock {
+  width: 340px;
+  height: 370px;
+  padding-right: 30px;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0,0,0, 0.3);
+  overflow: hidden;
+}
+
+.stepblock .step-num {
+  font-size: 200px;
+  font-weight: bold;
+  position: relative;
+  top: -100px;
+  left: -30px;
+}
+
+.stepblock:hover {
+  background: #ffcc01;
+  color: #fff;
+}
+
+.steps-container {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stepblock h4 {
+  font-size: 15px;
+  margin-left: 40px;
+  margin-top: -100px;
+}
+
+.stepblock span {
+  margin-right: 15px;
+}
+
+.stepblock .step-info {
+  margin-left: 70px;
+  line-height: 29px;
+  text-align: justify;
+}
+
+.stepblock .step-info-last {
+  display: inline-block;
+  margin-left: 70px;
+  margin-top: 20px;
+  border-bottom: 3px solid #000;
+}
+
+.stepblock .step-info-last:hover {
+  border-bottom: 3px solid #fff;
 }
 
 @media screen and (max-width: 1100px) {
@@ -360,6 +433,18 @@ nav {
     margin-top: 10px;
     width: 348px;
     margin-left: 0;
+  }
+
+  .steps-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stepblock {
+    margin-bottom: 20px;
+    width: 100%;
+    height: 300px;
   }
 }
 
@@ -473,7 +558,7 @@ nav {
 
   .stats-text p {
     margin-top: 5px;
-    font-size: 13px;
+    font-size: 15px;
     line-height: 20px;
   }
 
@@ -524,5 +609,28 @@ nav {
     margin-top: 10px;
     width: 348px;
     margin-left: 0;
+  }
+
+  .steps-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+  }
+
+  .stepblock {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    width: 100%;
+    height: 370px;
+  }
+
+  .steps-text, .steps h2 {
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+
+  .steps h2 {
+    font-size: 30px;
   }
 }
